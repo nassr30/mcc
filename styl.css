@@ -1,0 +1,238 @@
+.c-item {
+  height: 615px;
+}
+.c-img {
+  height: 120%;
+}
+.c-c {
+  top: 40%;
+}
+.c-w {
+  color: black;
+}
+.c-p {
+  height: 109vh;
+  margin-top: 5em;
+}
+.c-o {
+  margin-top: 50px;
+}
+.profile {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 70px;
+}
+h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.auto {
+  margin-top: 2em;
+}
+.rowi {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.profil-col {
+  flex-basis: 31%;
+  background: #494747;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  color: white;
+}
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.profil-col:hover {
+  box-shadow: 0 0 20px 0px rgb(17, 17, 17);
+}
+@media screen and (max-width: 768px) {
+  .rowi {
+    flex-wrap: wrap;
+  }
+
+  .profil-col {
+    flex-basis: 100%;
+  }
+}
+.dropdown-toggle::after {
+  display: none; /* Menghilangkan segitiga terbalik */
+  pointer-events: none; /* Mencegah interaksi dengan caret */
+}
+/* Logo di navbar */
+.navbar-brand img {
+  max-width: 120px; /* Atur lebar maksimum logo */
+  max-height: 70px; /* Atur tinggi maksimum logo */
+  transition: all 0.3s ease; /* Tambahkan transisi untuk perubahan ukuran logo */
+}
+
+/* Tambahkan gaya untuk logo di navbar yang di-scroll */
+nav.scrolled .navbar-brand img {
+  max-width: 90px; /* Atur lebar maksimum logo ketika di-scroll */
+  max-height: 50px; /* Atur tinggi maksimum logo ketika di-scroll */
+}
+
+/* Tambahkan gaya untuk navbar yang di-scroll */
+nav.scrolled {
+  padding: 10px 0; /* Atur padding navbar yang lebih kecil */
+  height: 60px; /* Atur tinggi navbar yang lebih kecil */
+}
+
+/* Tambahkan transisi agar perubahan ukuran navbar menjadi lebih mulus */
+nav {
+  transition: all 0.3s ease;
+}
+
+/* Efek hover pada link */
+.navbar-nav .nav-link:hover {
+  color: black; /* Warna teks yang diinginkan saat disentuh */
+  border-bottom: 2px solid white; /* Garis bawah saat disentuh */
+}
+
+/* Efek hover pada dropdown */
+.dropdown-menu .dropdown-item:hover {
+  background: rgb(12, 199, 59);
+  color: black; /* Warna teks putih saat disentuh */
+  border-bottom: none; /* Menghilangkan garis bawah */
+  transition: background-color 0.3s ease; /* Efek transisi saat mengubah warna */
+  border-bottom: 2px solid black; /* Garis bawah saat disentuh */
+}
+.navbar {
+  background: linear-gradient(to right, rgb(12, 199, 59), #494747); /* Gradasi biru ke hitam */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  width: 120px; /* Ubah lebar logo sesuai kebutuhan */
+  height: auto; /* Atur tinggi agar rasio aspek dipertahankan */
+  margin-right: 10px; /* Atur jarak kanan antara logo dan teks */
+}
+
+/* Efek hover pada dropdown saat menu induk disentuh */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block; /* Membuat dropdown muncul saat menu induk disentuh */
+}
+
+/* CSS untuk efek garis putih di bawah menu saat disentuh */
+.navbar-nav .nav-link {
+  position: relative;
+}
+.carousel-caption {
+  color: white; /* Mengubah warna teks menjadi putih */
+}
+
+.carousel-item img {
+  filter: brightness(50%); /* Menggelapkan warna gambar */
+}
+footer {
+  margin-top: 15px;
+  background: linear-gradient(to left, #494747, rgb(12, 199, 59)); /* Gradasi biru ke hitam */
+}
+.quick-links a {
+  color: white;
+}
+.quick-links a:hover {
+  color: black;
+}
+.social-icon {
+  transition: color 0.3s ease;
+  color: white;
+}
+
+.social-icon:hover {
+  color: black;
+}
+.form-area {
+  padding-top: 5%;
+  margin-bottom: 90px;
+}
+.row.single-form {
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+.left {
+  background: #494747;
+  padding: 200px 98px;
+}
+.left h2 {
+  font-family: poppins;
+  color: #fff;
+  font-weight: 700;
+  font-size: 48px;
+}
+.left h2 span {
+  font-weight: 100;
+}
+.single-form {
+  background: #fff;
+}
+.right {
+  padding: 70px 100px;
+  position: relative;
+}
+.right i {
+  position: absolute;
+  font-size: 80px;
+  left: -27px;
+  top: 40%;
+  color: #fff;
+}
+.form-control {
+  border: 2px solid #000;
+}
+.right button {
+  border: none;
+  border-radius: 0;
+  background: #494747;
+  width: 180px;
+  color: #fff;
+  padding: 15px 0;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.right button:hover {
+  background-color: rgb(12, 199, 59);
+  color: #000;
+}
+
+/*responsive*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .left {
+    padding: 90px 15px;
+    text-align: center;
+  }
+  .left h2 {
+    font-size: 25px;
+  }
+  .right {
+    padding: 25px;
+  }
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 46%;
+  }
+  .right button {
+    width: 150px;
+    padding: 12px 0;
+  }
+}
